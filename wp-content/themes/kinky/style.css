@@ -1,0 +1,289 @@
+/*
+Theme Name: Kinky
+Text Domain: kinky
+Version: 1.0
+Tested up to: 1.0
+Requires at least: 1.0
+Requires PHP: 5.2.4
+Description: The Kinky Theme For The Kinky Me
+Author: mashiam
+Author URI: https://wordpress.com/home/mshairnet.wordpress.com
+Theme URI: https://wordpress.org/themes/twentytwenty/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+	0. 	CSS Reset
+	1. 	Header
+
+----------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------- */
+
+@font-face {
+	font-family: "Montserrat";
+	src: url('./assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Montserrat Italic";
+	src: url('./assets/fonts/Montserrat-Italic.ttf');
+}
+
+@font-face {
+	font-family: "Montserrat ExtraLight";
+	src: url('./assets/fonts/Montserrat-ExtraLight.ttf');
+}
+
+@font-face {
+	font-family: "Montserrat ExtraLight Italic";
+	src: url('./assets/fonts/Montserrat-ExtraLightItalic.ttf');
+}
+
+@font-face {
+	font-family: "Montserrat Light";
+	src: url('./assets/fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+	font-family: "Montserrat Light Italic";
+	src: url('./assets/fonts/Montserrat-LightItalic.ttf');
+}
+
+@font-face {
+	font-family: "Montserrat Medium";
+	src: url('./assets/fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+	font-family: "Montserrat Medium Italic";
+	src: url('./assets/fonts/Montserrat-MediumItalic.ttf');
+}
+
+@font-face {
+	font-family: "Montserrat SemiBold";
+	src: url('./assets/fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: "Montserrat SemiBold Italic";
+	src: url('./assets/fonts/Montserrat-SemiBoldItalic.ttf');
+}
+
+@font-face {
+	font-family: "Montserrat Bold";
+	src: url('./assets/fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+	font-family: "Montserrat Bold Italic";
+	src: url('./assets/fonts/Montserrat-BoldItalic.ttf');
+}
+
+@font-face {
+	font-family: "Montserrat ExtraBold";
+	src: url('./assets/fonts/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+	font-family: "Montserrat ExtraBold Italic";
+	src: url('./assets/fonts/Montserrat-ExtraBoldItalic.ttf');
+}
+
+html,
+body {
+	border: none;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	background: #1E1E1E;
+	color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+address,
+big,
+cite,
+code,
+em,
+font,
+img,
+small,
+strike,
+sub,
+sup,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tr,
+th,
+td {
+	border: none;
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: inherit;
+}
+
+blockquote::before,
+blockquote::after {
+	content: "";
+}
+
+ul, ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*	1. Header
+/* -------------------------------------------------------------------------- */
+
+.header {
+	width: 100%;
+}
+
+.header_banner {
+	width: 100%;
+	height: 217px;
+	background: #90D295;
+}
+
+
+.header_menu {
+	width: 100%;
+	background: #365038;
+	display: flex;
+}
+
+.header_nav {
+	width: 100%;
+	max-width: 1196px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	padding: 14px;
+}
+
+.header_logo {
+	display: block;
+	margin-right: 21px;
+}
+
+.header_nav__list {
+	display: flex;
+}
+
+.header_nav__item {
+	margin-right: 21px;
+}
+
+.header_nav__link {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.header_search {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.header_search__input {
+	background: #FFFFFF;
+	border: 1px solid #989797;
+	border-radius: 4px;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 15px;
+	padding: 7px 11px;
+	outline: none;
+}
+
+/** main_content */
+
+.main_content {
+	width: 100%;
+	height: 200px;
+	max-width: 1196px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+/** footer */
+
+.footer {
+	padding: 37px 0 21px;
+	background: #365038;
+
+}
+
+.footer_nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer_nav__list {
+	margin-top: 21px;
+	margin-bottom: 32px;
+	display: flex;
+	align-items: center;
+}
+
+.footer_nav__item {
+	margin-right: 21px;
+}
+
+.footer_nav__link {
+	font-size: 20px;
+	line-height: 24px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.footer_logo__img {
+	width: 90px;
+	height: 90px;
+}
+
+.footer_copy {
+	display: block;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}

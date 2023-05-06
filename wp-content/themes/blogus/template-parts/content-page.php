@@ -10,28 +10,32 @@
 
 ?>
 
-<?php if( class_exists('woocommerce') && (is_account_page() || is_cart() || is_checkout())) { ?>
+<?php if (class_exists('woocommerce') && (is_account_page() || is_cart() || is_checkout())) { ?>
 	<div class="col-md-12 bs-card-box padding-20">
-		<?php if (have_posts()) {  while (have_posts()) : the_post(); ?>
-			<?php the_content(); endwhile; } } else {?>
-			<div class="col-md-9 col-sm-8">
-				<div class="bs-card-box padding-20">
-					<?php if( have_posts()) :  the_post(); ?>
-					<h1 class="entry-title"><?php the_title(); ?></h1>		
+		<?php if (have_posts()) {
+			while (have_posts()) : the_post(); ?>
+		<?php the_content();
+			endwhile;
+		}
+	} else { ?>
+		<div class="col-md-9 col-sm-8">
+			<div class="bs-card-box padding-20">
+				<?php if (have_posts()) :  the_post(); ?>
+					<h1 class="entry-title"><?php the_title(); ?></h1>
 					<?php the_content(); ?>
-					<?php endif; 
-						while ( have_posts() ) : the_post();
-						// Include the page
-						the_content();
-						comments_template( '', true ); // show comments
-						
-						endwhile;
-					?>	
-				</div>
+				<?php endif;
+				while (have_posts()) : the_post();
+					// Include the page
+					the_content();
+					comments_template('', true); // show comments
+
+				endwhile;
+				?>
 			</div>
-	<!--Sidebar Area-->
-	<aside class="col-md-3 col-sm-4">
-         <?php get_sidebar();?>
-    </aside>
+		</div>
+		<!--Sidebar Area-->
+		<aside class="col-md-3 col-sm-4">
+			<?php get_sidebar(); ?>
+		</aside>
 	<?php } ?>
 	<!--Sidebar Area-->

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages.
  *
@@ -9,18 +10,18 @@
  *
  * @package Blogus
  */
-get_header(); 
+get_header();
 ?>
 <!--==================== main content section ====================-->
 <main id="content">
 	<!--container-->
-		<div class="container">
+	<div class="container">
 		<!--row-->
-        <div class="row">
-		<!--==================== breadcrumb section ====================-->
-		<?php do_action('blogus_breadcrumb_content'); ?>
-		<!-- Blog Area -->
-		 <?php get_template_part('template-parts/content', 'page'); ?>
+		<div class="row">
+			<!--==================== breadcrumb section ====================-->
+			<?php do_action('blogus_breadcrumb_content'); ?>
+			<!-- Blog Area -->
+			<?php get_template_part('template-parts/content', 'page'); ?>
 		</div><!--/row-->
 	</div><!--/container-->
 </main>

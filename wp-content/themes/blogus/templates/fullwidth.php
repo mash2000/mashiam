@@ -14,20 +14,21 @@
 get_header(); ?>
 
 <main id="content">
-    <div class="container">
-      <div class="row">
-        <!--==================== breadcrumb section ====================-->
-        <?php do_action('blogus_breadcrumb_content'); ?>
+  <div class="container">
+    <div class="row">
+      <!--==================== breadcrumb section ====================-->
+      <?php do_action('blogus_breadcrumb_content'); ?>
       <div class="col-md-12 mg-card-box padding-20">
-            <?php while ( have_posts() ) : the_post(); 
+        <?php while (have_posts()) : the_post();
 
-				the_content(); 
+          the_content();
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			endwhile; // End of the loop. ?>
+          // If comments are open or we have at least one comment, load up the comment template.
+          if (comments_open() || get_comments_number()) :
+            comments_template();
+          endif;
+        endwhile; // End of the loop. 
+        ?>
       </div>
     </div>
   </div>
